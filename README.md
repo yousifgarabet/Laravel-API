@@ -1,6 +1,6 @@
 ## In this project we will do the following steps
 - Set Up Laravel
-- SQLite Setup
+- Mysql Setup
 - Basic Routing
 - Product Model & Migration
 - Using the Model
