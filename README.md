@@ -1,3 +1,23 @@
+## In this project we will do the following steps
+- Set Up Laravel
+- SQLite Setup
+- Basic Routing
+- Product Model & Migration
+- Using the Model
+- Product Controller & Methods
+- Create Products & Validation
+- Single Product & Resource Routes
+- Update Product
+- Delete Product
+- Search Products
+- Sanctum Setup
+- Protecting Routes
+- Auth Controller
+- Register User & Get Token
+- Logout & Delete Token
+- Login User & Get Token
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
