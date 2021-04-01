@@ -16,15 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/products', [ProductController::class, 'index']);
+Route::post('/products', [ProductController::class, 'store']);
 
-// Route::post('/products', function () {
-//     return Product::create([
-//         'name' => 'Product one',
-//         'slug' => 'product-one',
-//         'description' => 'This is Product one',
-//         'price' => '100'
-//     ]);
-// });
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
