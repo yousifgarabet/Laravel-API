@@ -14,12 +14,25 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+// Route::resource('products', ProductController::class);
 
-Route::resource('products', ProductController::class);
+
+// Public Routes
+Route::get('/products', [ProductController::class, 'index']);
+Route::get('/products/{id}', [ProductController::class, 'show']);
 Route::get('/products/search/{name}', [ProductController::class, 'search']);
 
-// Route::get('/products', [ProductController::class, 'index']);
-// Route::get('/products/{id}', [ProductController::class, 'show']);
+
+// Protected Routes
+Route::group(['middleware' => 'auth:sanctum'], function() {
+Route::post('/products', [ProductController::class, 'store']);
+Route::delete('/products/{id}', [ProductController::class, 'destroy']);
+
+});
+
+
+
+
 
 // Route::post('/products', [ProductController::class, 'store']);
 
