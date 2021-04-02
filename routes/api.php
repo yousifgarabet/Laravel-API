@@ -28,6 +28,7 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::group(['middleware' => 'auth:sanctum'], function() {
 Route::post('/products', [ProductController::class, 'store']);
 Route::delete('/products/{id}', [ProductController::class, 'destroy']);
+Route::post('/logout', [AuthController::class, 'logout']);
 
 });
 
